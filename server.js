@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 app.use((req, res, next) => {
     res.render('maintence.hbs')
 })
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'))
 hbs.registerHelper('getcurrentYear', () => {
     return new Date().getFullYear();
 })
